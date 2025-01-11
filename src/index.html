@@ -1,35 +1,74 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" href="./assets/img/4geeks.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello Rigo with Vanilla.js</title>
 
-    <!-- Fontawesome is our recomended library for icons -->
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
-      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
-      crossorigin="anonymous"
-    />
-  </head>
-  <body>
-    <!-- Write your HTML code here, you can delete everything withing the body tags -->
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./assets/img/rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="./assets/img/4geeks.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hello Rigo with Vanilla.js</title>
+
+  <!-- Fontawesome is our recomended library for icons -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+    integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous" />
+</head>
+
+<body>
+  <!-- Write your HTML code here, you can delete everything withing the body tags -->
+  <div class="container-fluid text-center">
+    <h1 class="mt-5">Hi, I'm your Team generator!</h1>
+    <p class="alert alert-warning mt-4">
+      To start you need to <b>Insert your favorite Team </b> and 1 player per <b>area</b>, and you will have a your Team
+      in your screen!
+    </p>
+    <div class="row">
+      <div class="col-md-2"></div>
+      <div class="col-md-8">
+        <div class="form-floating">
+          <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+            <option selected>Open this select menu</option>
+            <option value="1">4-4-2</option>
+            <option value="2">3-4-3</option>
+            <option value="3">3-5-2</option>
+            <option value="3">4-3-3</option>
+            <option value="3">Other</option>
+          </select>
+          <div class="mb-3">
+            <label for="listgoalkeeper" class="form-label">Insert your Goalkeeper</label>
+            <input type="text" class="form-control" id="suputamadre" placeholder="Insert your GK">
+          </div>
+          <div class="mb-3">
+            <label for="Defender" class="form-label">Insert your Defender</label>
+            <input type="text" class="form-control" id="defensa" placeholder="Insert your Defender">
+          </div>
+          <div class="mb-3">
+            <label for="Midfielder" class="form-label">Insert your Midfielder</label>
+            <input type="text" class="form-control" id="mediocampista" placeholder="Insert your Midfielder">
+          </div>
+          <div class="mb-3">
+            <label for="Striker" class="form-label">Insert your Striker</label>
+            <input type="text" class="form-control" id="atacante" placeholder="Insert your Striker">
+          </div>
+          <div class="col-auto">
+            <button type="submit" id="submit" class="btn btn-primary mb-3">Confirm</button>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-md-2"></div>
+      <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+          <p>Your top team of 5 members is: <span id="resultadogk">GK</span>, <span id="resultadodf">Defender</span>, <span id="resultadomd">Midfielder</span>, <span id="resultadost">Striker</span>. </p>
+        </div>
+        <div class="col-md-2"></div>
       </div>
     </div>
+  
+  </div>
 
-    <!-- Do not delete this script tag, this is what connects your HTML with the Javascript code -->
-    <script type="module" src="/app.js"></script>
-  </body>
+  <!-- Do not delete this script tag, this is what connects your HTML with the Javascript code -->
+  <script type="module" src="/app.js"></script>
+
+</body>
+
 </html>
