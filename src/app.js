@@ -5,13 +5,16 @@ import "./style.css";
 import "./assets/img/rigo-baby.jpg";
 import "./assets/img/4geeks.ico";
 
+// create variables 
 
 let goalkeeper = [];
 let defense = [];
 let midfielder = [];
 let striker = [];
 
-function getContent(ref_goalkeeper, ref_defensa, ref_mediocampista, ref_atacante) {
+//start function
+
+function pushInputToArray(ref_goalkeeper, ref_defensa, ref_mediocampista, ref_atacante) {
 
   const porteroInput = document.getElementById('suputamadre');
   const portero = porteroInput.value;
@@ -36,7 +39,7 @@ function getContent(ref_goalkeeper, ref_defensa, ref_mediocampista, ref_atacante
 let button = document.getElementById("submit");
 
 button.addEventListener("click", () => {  
-  getContent(goalkeeper, defense, midfielder, striker);
+  pushInputToArray(goalkeeper, defense, midfielder, striker);
   console.log(goalkeeper, defense, midfielder, striker);
 
 // sustituye los elementos del team
